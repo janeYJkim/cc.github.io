@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'samsung';
+    src: url('../fonts/SamsungOneKorean-400_v1.2_hinted.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'samsung';
+    src: url('../fonts/SamsungOneKorean-700_v1.2_hinted.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'samsungNo';
+    src: url('../fonts/SamsungSharpSans-Medium.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'samsungNo';
+    src: url('../fonts/SamsungSharpSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+html{
+    font-size: 10px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 2.4rem;
+    font-family: 'samsung';
+    font-weight: 400;
+    color:#333333;
+    font-size: 1.6rem;
+
+}
+ol, ul {
+	list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 하단메뉴 */
+.bottom_menu{
+    height:6.3rem;
+    background-color: #ebf0f4;
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+.bottom_menu_item{
+    flex: 1;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.bottom_menu_item img{
+    width:3rem;
+    height:3rem;
+    margin:0.8rem 0 0.3rem 0;
+}
+.bottom_menu_item b{
+    color: #395fa4;
+    font-weight: 700;
+}
+/*text*/
+.big_font{
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: 700;
+    word-break: keep-all;
+}
+.big_subfont{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #666666;
+    word-break: keep-all;
+}
+.card_title{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+.card_exp{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    /* word-break: keep-all; */
+}
+.basic_mini{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: #666666;
+}
+.basic_mini i{
+    font-style: normal;
+    font-family: 'samsungNo';
+}
+.basic_impact{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:#395fa4;
+    margin: 2rem 0 1rem 0;
+    word-break: keep-all;
+}
+.basic_date{
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    font-family: 'samsungNo','samsung';
+    margin-top: 0.4rem;
+    text-align: right;
+}
+.basic_point{
+    color:#395fa4;
+    padding: 1rem 0;
+    border-top: 0.1rem solid #395fa4;
+}
+.basic_point b{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+ul.point_list, ol.point_list{
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+ul.point_list li, ol.point_list li{
+    padding-left: 1rem;
+    background: url(../images/point_list.png) 0 1rem no-repeat;
+    background-size: 0.3rem 0.3rem;
+}
+.boxtext{
+    color:#395fa4;
+    padding: 1rem;
+    border: 0.1rem solid #395fa4;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.blueboxtext{
+    background-color:#1428a0;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.news_title{
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    word-break: keep-all;
+    margin-bottom: 0.8rem;
+}
+
+/* ul.point_list li::before, ol.point_list li::before{
+    content: "·";
+    display: inline-block;
+    vertical-align: middle;
+} */
+.h50{
+    height:2rem;
+}
+.h100{
+    height:3rem;
+}
+.tm30{
+    margin-top: 1rem;
+}
+.tac{
+    text-align: center;
+}
+/*sub pages*/
+.title{
+    height: 5.8rem;
+    border-bottom: 0.1rem solid #d2d2d2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #475268;
+}
+.title_item{
+    margin-left:2.2rem;
+}
+.title img{
+    width: 1.2rem;
+}
+.vision{
+    margin:2rem;
+}
+.vision img{
+    margin-top: 3.3rem;
+	max-width: 100%;
+	height: auto;
+}
+.roundspace{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1.8rem;
+}
+.roundspacedan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1.8rem;
+}
+.graybox{
+    background-color: #ebf0f4;
+    border-radius: 1rem;
+    padding:1.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+.graybox:nth-child(even){
+    background-color: #e2e6f1;
+}
+.graybox:last-of-type{
+    margin-bottom: 0;
+}
+.graybox .basic_date{
+    text-align: justify;
+}
+
+.dantwo{
+    flex: 1 1 40%;
+    margin-bottom: 0.8rem !important;
+}
+.dantwo:nth-child(odd){
+    margin-right: 0.8rem;  
+}
+
+.dantwo .card_title{
+    background-color: #ebf0f4;
+    padding:1rem 0 0.6rem 0;
+    border-radius: 1rem 1rem 0 0;
+}
+.dantwo .card_white{
+    background-color: #ffffff;
+    padding:0.8rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    border: 2px solid #ebf0f4;
+    border-radius: 0 0 1rem 1rem;
+}
+.dantwo img{
+    margin-bottom:0.4rem;
+    max-width: 100%;
+}
+.basic{
+    margin: 2rem;
+    line-height:2.4rem;
+}
+.basic img{
+    max-width: 100%;
+}
+.cimage{
+    margin-top: 1rem;
+    text-align: center;
+}
+.boxarr img{
+    width: 3rem;
+    margin: 0.7rem 0 0.3rem 0;
+}
+.boxtext{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;    
+    max-height: 32px;     
+    -webkit-line-clamp: 2; /* 표시하고자 하는 라인 수 */
+    -webkit-box-orient: vertical;
+	
+}
